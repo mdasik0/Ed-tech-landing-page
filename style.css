@@ -134,7 +134,7 @@ body {
 
 .header-img-section {
     width: 100%; /* Full width of the viewport */
-    height: 880px; /* Full height of the viewport, or adjust as needed */
+    height: 875px; /* Full height of the viewport, or adjust as needed */
     overflow: hidden; /* Ensures no overflow outside the container */
 }
 
