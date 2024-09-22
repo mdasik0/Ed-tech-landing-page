@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --container-width: 86vw;
-    --primary-color: #F7C365
+:root {
+  --container-width: 86vw;
+  --primary-color: #f7c365;
 }
 
 * {
@@ -133,120 +133,237 @@ body {
 }
 
 .header-img-section {
-    width: 100%; /* Full width of the viewport */
-    height: 875px; /* Full height of the viewport, or adjust as needed */
-    overflow: hidden; /* Ensures no overflow outside the container */
+  width: 100%; /* Full width of the viewport */
+  height: 875px; /* Full height of the viewport, or adjust as needed */
+  overflow: hidden; /* Ensures no overflow outside the container */
 }
 
 .header-img-section img {
-    width: 100%; /* Full width of the parent div */
-    height: 100%; /* Full height of the parent div */
-    object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */ /* Ensures no gap below the image (since images are inline by default) */
+  width: 100%; /* Full width of the parent div */
+  height: 100%; /* Full height of the parent div */
+  object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */ /* Ensures no gap below the image (since images are inline by default) */
 }
 .social-proof {
-    display: flex;
-    align-items: center;
-    width: var(--container-width);
-    margin: 0 auto;
-    padding:140px 0;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 140px 0;
+  justify-content: space-between;
 }
 
 .social-proof div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-proof > p {
-    width: 3px;
-    height: 40px;
-    background: var(--primary-color);
+  width: 3px;
+  height: 40px;
+  background: var(--primary-color);
 }
-.social-proof div h1{
-    font-size: 3.5rem;
-    font-weight: 600;
+.social-proof div h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
-.social-proof div p{
-    color: #7e7e7e;
+.social-proof div p {
+  color: #7e7e7e;
 }
 .online-education {
-    background: #FFF6E5;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px  ;
-    
+  background: #fff6e5;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .online-education img {
-    width: 70%;
-    height: 100%;
+  width: 70%;
+  height: 100%;
 }
 
 .online-education div {
-    width: 363px;
+  width: 363px;
 }
 
 .online-education div h1 {
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 70px;
-    margin-bottom: 15px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 15px;
 }
 
 .online-education div h1 .smart {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    background: var(--primary-color);
-    padding: 4px 15px;
-    border: 2px solid black;
-    border-radius: 100vw;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  background: var(--primary-color);
+  padding: 4px 15px;
+  border: 2px solid black;
+  border-radius: 100vw;
 }
 .online-education div p {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 .feature-cards-section {
-    padding: 6vw 7vw;
-    width: 100%;
-    background: #f0efef;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-    grid-template-rows: repeat(2, 433px); /* 2 rows, each 300px high */
-    gap: 30px;
-    grid-template-areas: 
-      "special-features-card special-features-card card-1"
-      "card-2 card-3 card-4"; /* Layout of the second row */
-  }
-  
-  /* Make .special-features-card span across 2 rows and 2 columns */
-  .feature-cards-section .special-features-card {
-    background: #161616;
-    grid-area: special-features-card; /* Assign to the grid area */
-    grid-column: span 2; /* Span 2 columns */
-  }
-  
-  .feature-cards-section .card-1 {
-    grid-area: card-1;
-  }
-  
-  .feature-cards-section .card-2 {
-    grid-area: card-2;
-  }
-  
-  .feature-cards-section .card-3 {
-    grid-area: card-3;
-  }
-  
-  .feature-cards-section .card-4 {
-    grid-area: card-4;
-  }
-  
-.feature-cards-section .card-1,.card-2,.card-3,.card-4{
-    background: white;
+  padding: 6vw 7vw;
+  width: 100%;
+  background: #f0efef;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-template-rows: repeat(2, 433px); /* 2 rows, each 300px high */
+  gap: 50px;
+  grid-template-areas:
+    "special-features-card special-features-card card-1"
+    "card-2 card-3 card-4"; /* Layout of the second row */
 }
 
-.feature-cards-section .special-features-card,.card-1,.card-2,.card-3,.card-4{
-    border-radius: 15px;
+/* Make .special-features-card span across 2 rows and 2 columns */
+.feature-cards-section .special-features-card {
+  background: #161616;
+  grid-area: special-features-card; /* Assign to the grid area */
+  grid-column: span 2; /* Span 2 columns */
 }
+
+.feature-cards-section .card-1 {
+  grid-area: card-1;
+}
+
+.feature-cards-section .card-2 {
+  grid-area: card-2;
+}
+
+.feature-cards-section .card-3 {
+  grid-area: card-3;
+}
+
+.feature-cards-section .card-4 {
+  grid-area: card-4;
+}
+
+.feature-cards-section .card-1,
+.card-2,
+.card-3,
+.card-4 {
+  background: white;
+}
+
+.feature-cards-section .special-features-card,
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  border-radius: 30px;
+}
+.special-features-card {
+  padding: 50px;
+}
+.special-features-card h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+.special-features-card h1 .features {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: var(--primary-color);
+  line-height: 100px;
+}
+.special-features-card button {
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 100vw;
+}
+.special-features-card svg {
+  width: 2rem;
+}
+.our {
+  position: relative;
+}
+.our .line-1,
+.line-2,
+.line-3 {
+  position: absolute;
+  background: var(--primary-color);
+}
+.feature-cards-section .card-1,
+.card-2,
+.card-3,
+.card-4 {
+  padding: 50px;
+  position: relative;
+  z-index: 10 ;
+}
+.feature-cards-section .card-1 svg,
+.card-2 svg,
+.card-3 svg,
+.card-4 svg {
+  height: 120px;
+  z-index: 20;
+}
+
+.feature-cards-section div h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 50px 0;
+}
+
+.feature-cards-section .card-1::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border-radius: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  left: 26%;
+}
+.feature-cards-section .card-2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border-radius: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  left: 19%;
+}
+.feature-cards-section .card-3::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: var(--primary-color);
+  border-radius: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  left: 16%;
+}
+.feature-cards-section .card-4::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border-radius: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 30%;
+  left: 20%;
+}
+/* .card-1 .certificate-svg,.instructor-svg,.support-svg,.lession-svg {
+    
+} */
