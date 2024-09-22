@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root{
+    --container-width: 86vw;
+    --primary-color: #F7C365
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +19,11 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .webpage-header {
-  background: #F7C365;
+  background: var(--primary-color);
 }
 
 .header-width {
-  width: 86vw;
+  width: var(--container-width);
   margin: 0px auto;
   padding: 25px 0px;
 }
@@ -62,7 +67,7 @@ body {
 .header-text .skills {
   background: black;
   padding: 10px 40px;
-  color: #ffc35c;
+  color: var(--primary-color);
   border-radius: 100vw;
   font-style: italic;
   font-weight: 500;
@@ -137,4 +142,32 @@ body {
     width: 100%; /* Full width of the parent div */
     height: 100%; /* Full height of the parent div */
     object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */ /* Ensures no gap below the image (since images are inline by default) */
+}
+.social-proof {
+    display: flex;
+    align-items: center;
+    width: var(--container-width);
+    margin: 0 auto;
+    padding:140px 0;
+    justify-content: space-between;
+}
+
+.social-proof div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-proof > p {
+    width: 3px;
+    height: 40px;
+    background: var(--primary-color);
+}
+.social-proof div h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.social-proof div p{
+    color: #7e7e7e;
 }
