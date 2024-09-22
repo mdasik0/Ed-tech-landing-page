@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+.webpage-header {
+  background: #F7C365;
+}
+
+.header-width {
+  width: 86vw;
+  margin: 0px auto;
+  padding: 25px 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  font-weight: 500;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar ul li .sign-up {
+  background: black;
+  color: white;
+  padding: 13px 30px;
+  font-family: "Work Sans", sans-serif;
+
+  border: none;
+  border-radius: 100vw;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  font-size: 4rem;
+  width: 500px;
+  font-weight: 600;
+  line-height: 90px;
+}
+.header-text .skills {
+  background: black;
+  padding: 10px 40px;
+  color: #ffc35c;
+  border-radius: 100vw;
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 10px;
+}
+
+.header-text .improve {
+  position: relative;
+}
+.line-1,
+.line-2,
+.line-3 {
+  position: absolute;
+  height: 2px;
+  background: black;
+}
+.line-1 {
+  top: 0px;
+  width: 30px;
+
+  left: -30px;
+  transform: rotate(45deg);
+}
+.line-2 {
+  top: 20px;
+  width: 10px;
+
+  left: -20px;
+  transform: rotate(10deg);
+}
+.line-3 {
+  top: -5px;
+  width: 15px;
+
+  left: -5px;
+  transform: rotate(78deg);
+}
+.header-description {
+  width: 340px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.header-section div button {
+  font-weight: 600;
+  border: solid 1px;
+  border-radius: 100vw;
+  padding: 13px 28px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Work Sans", sans-serif;
+  background: transparent;
+}
+
+.header-section div button .feather {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header-img-section {
+    width: 100%; /* Full width of the viewport */
+    height: 880px; /* Full height of the viewport, or adjust as needed */
+    overflow: hidden; /* Ensures no overflow outside the container */
+}
+
+.header-img-section img {
+    width: 100%; /* Full width of the parent div */
+    height: 100%; /* Full height of the parent div */
+    object-fit: contain; /* Ensures the image covers the container while maintaining aspect ratio */ /* Ensures no gap below the image (since images are inline by default) */
+}
