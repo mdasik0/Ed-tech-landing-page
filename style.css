@@ -206,3 +206,47 @@ body {
 .online-education div p {
     line-height: 25px;
 }
+
+.feature-cards-section {
+    padding: 6vw 7vw;
+    width: 100%;
+    background: #f0efef;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    grid-template-rows: repeat(2, 433px); /* 2 rows, each 300px high */
+    gap: 30px;
+    grid-template-areas: 
+      "special-features-card special-features-card card-1"
+      "card-2 card-3 card-4"; /* Layout of the second row */
+  }
+  
+  /* Make .special-features-card span across 2 rows and 2 columns */
+  .feature-cards-section .special-features-card {
+    background: #161616;
+    grid-area: special-features-card; /* Assign to the grid area */
+    grid-column: span 2; /* Span 2 columns */
+  }
+  
+  .feature-cards-section .card-1 {
+    grid-area: card-1;
+  }
+  
+  .feature-cards-section .card-2 {
+    grid-area: card-2;
+  }
+  
+  .feature-cards-section .card-3 {
+    grid-area: card-3;
+  }
+  
+  .feature-cards-section .card-4 {
+    grid-area: card-4;
+  }
+  
+.feature-cards-section .card-1,.card-2,.card-3,.card-4{
+    background: white;
+}
+
+.feature-cards-section .special-features-card,.card-1,.card-2,.card-3,.card-4{
+    border-radius: 15px;
+}
