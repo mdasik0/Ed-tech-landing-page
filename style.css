@@ -171,3 +171,38 @@ body {
 .social-proof div p{
     color: #7e7e7e;
 }
+.online-education {
+    background: #FFF6E5;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px  ;
+    
+}
+
+.online-education img {
+    width: 70%;
+    height: 100%;
+}
+
+.online-education div {
+    width: 363px;
+}
+
+.online-education div h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 15px;
+}
+
+.online-education div h1 .smart {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background: var(--primary-color);
+    padding: 4px 15px;
+    border: 2px solid black;
+    border-radius: 100vw;
+}
+.online-education div p {
+    line-height: 25px;
+}
