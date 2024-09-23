@@ -457,7 +457,7 @@ body {
   font-size: 4rem;
   font-weight: 500;
 }
-h1 .learning {
+.learning,.mobile-app {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   background: var(--primary-color);
@@ -587,4 +587,25 @@ transform: rotate(165deg);
 right: -5px;
 transform: rotate(115deg);
 }
+
+.app-download-section {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  margin: 100px auto;
+
+}
+
+.app-download-section h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  width: 550px;
+  line-height: 90px;
+  text-align:center;
+
+}
+
+
 
