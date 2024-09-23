@@ -445,6 +445,60 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-/* .card-1 .certificate-svg,.instructor-svg,.support-svg,.lession-svg {
-    
-} */
+
+.sign-in-process {
+    padding: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-process .sign-in-process-text-description h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+h1 .learning {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  background: var(--primary-color);
+  border: 2px solid black;
+  border-radius: 100vw;
+  padding: 10px 15px
+}
+
+.sign-in-process-text-description h1{
+  width: 500px;
+  line-height: 110px;
+  margin-bottom: 20px;
+}
+
+.sign-in-process-text-description p {
+  width: 500px;
+  line-height: 25px;
+margin-bottom: 20px;
+}
+
+ul li {
+  list-style: none;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.sign-in-process-steps {
+  display:flex;
+  flex-direction:column;
+  gap:10px
+}
+
+li .tick-bg {
+  background: var(--primary-color);
+  width: fit-content;
+  height: fit-content;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:5px;
+  border-radius:100vw;
+
+}
