@@ -604,8 +604,18 @@ transform: rotate(115deg);
   width: 550px;
   line-height: 90px;
   text-align:center;
-
+}
+.app-download-links .img-1,.img-2 {
+  width: 200px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
+.app-download-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
 
